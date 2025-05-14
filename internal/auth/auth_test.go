@@ -7,7 +7,7 @@ import (
 
 func TestGetAPIKey_ValidHeader(t *testing.T) {
 	headers := http.Header{}
-	headers.Set("Authorization", "ApiKey trolo_api_key")
+	headers.Set("Authorization", "ApiKey valid_api_key")
 
 	apiKey, err := GetAPIKey(headers)
 	if err != nil {
